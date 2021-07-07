@@ -6,13 +6,14 @@
    1. GET api/persons
       - Will return list of all persons
    2. GET api/persons/3
-      - Will return list of all persons
+      - Will return single person with id 3
+      - Will return 404 error in case there is no person with id 3
    3. POST api/persons
-      -  Will return single person with id 3
-      -  Will return 404 error in case there is no person with id 3
-   4. PUT api/persons/2
       -  Will validate that a body with name and age was given and if not return error.
       -  Will return the inserted person (include the new id)
+   4. PUT api/persons/2
+      -  Will validate that a body with name and age was given and if not return error.
+      -  Will return the updated person
    5. DELETE api/persons/4
 5. Please use a well-known Python framework, such as Cherypy, Flask, FastAPI .
 6. Please include tests in your solution.
